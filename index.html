@@ -1,306 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Michelle Gibbons — Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle Gibbons - Portfolio</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="favicon.ico">
-
-  <!-- Styles -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Meta -->
-  <meta name="description" content="Portfolio of Michelle Gibbons — Data Analyst and Analytics Engineer. Dashboards, Snowflake pipelines, dbt models, and data storytelling.">
 </head>
 <body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__title">Michelle Gibbons</span>
+        <span class="brand__subtitle">Data Analyst • Analytics Engineer</span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="button button--primary" href="resume.pdf" target="_blank">Resume</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
 
-  <!-- Global site wrapper -->
-  <div class="site">
-
-    <!-- Header / Navigation -->
-    <header class="header">
-      <div class="container header__inner">
-        <a class="brand" href="#">
-          <span class="brand__title">Michelle Gibbons</span>
-          <span class="brand__subtitle">Data Analyst • Analytics Engineer</span>
-        </a>
-
-        <nav class="nav">
-          <a class="nav__link" href="#about">About</a>
-          <a class="nav__link" href="#experience">Experience</a>
-          <a class="nav__link" href="#projects">Projects</a>
-          <a class="nav__link" href="#education">Education</a>
-          <a class="nav__link" href="#contact">Contact</a>
-          <a class="button button--primary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-        </nav>
-
-        <!-- Mobile menu toggle -->
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span class="menu-toggle__bar"></span>
-          <span class="menu-toggle__bar"></span>
-          <span class="menu-toggle__bar"></span>
-        </button>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Hi, I'm Michelle Gibbons</h1>
+      <p class="hero__subtitle">I build end‑to‑end analytics systems — from Snowflake pipelines and dbt models to executive dashboards and data storytelling.</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#projects">Explore Projects</a>
+        <a class="button button--ghost" href="#about">About Me</a>
       </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <h1 class="hero__title">Hi, I’m Michelle Gibbons</h1>
-          <p class="hero__subtitle">I build end‑to‑end analytics systems — from Snowflake pipelines and dbt models to executive dashboards and data storytelling.</p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="#projects">Explore projects</a>
-            <a class="button button--ghost" href="#about">About me</a>
-          </div>
-          <div class="hero__meta">
-            <a class="chip" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="chip" href="https://github.com/yourgithub" target="_blank" rel="noopener">GitHub</a>
-            <a class="chip" href="mailto:youremail@example.com">Email</a>
-          </div>
-        </div>
+      <div class="hero__meta">
+        <a class="chip" href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a class="chip" href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        <a class="chip" href="mailto:youremail@example.com">Email</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Main content -->
-    <main class="main">
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="card card--soft">
+        <img class="avatar" src="headshot.jpg" alt="Michelle headshot">
+        <h2>About Me</h2>
+        <p>I’m a data analyst working across the full analytics stack. I specialize in transforming raw data into scalable systems and actionable insights. With 4+ years of experience, I build end‑to‑end dashboards, design ETL pipelines, and align metrics across teams to drive strategic decisions.</p>
+        <p>My work spans Snowflake pipeline engineering, dbt modeling, and interactive BI. I thrive where storytelling meets architecture — optimizing SQL, defining KPIs with stakeholders, and delivering business impact.</p>
+      </div>
+    </div>
+  </section>
 
-      <!-- About -->
-      <section id="about" class="section">
-        <div class="container">
-          <div class="grid grid--2">
-            <div class="card card--soft">
-              <div class="media">
-                <img class="avatar" src="headshot.jpg" alt="Michelle headshot">
-              </div>
-              <h2>About me</h2>
-              <p>
-                I’m a data analyst working across the full analytics stack. I specialize in transforming raw data into scalable systems and actionable insights.
-                I build end‑to‑end dashboards, design ETL pipelines, and align metrics across teams to drive strategic decisions.
-              </p>
-              <p>
-                My work spans Snowflake pipeline engineering, dbt modeling, and interactive BI. I thrive where storytelling meets architecture — optimizing SQL,
-                defining KPIs with stakeholders, and delivering business impact.
-              </p>
-              <ul class="list list--inline">
-                <li class="tag">SQL</li>
-                <li class="tag">Snowflake</li>
-                <li class="tag">dbt</li>
-                <li class="tag">Power BI</li>
-                <li class="tag">ETL</li>
-                <li class="tag">Version control</li>
-              </ul>
-            </div>
+  <!-- Experience -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="card card--soft">
+        <h3>Data Analyst (Analytics Engineering Focus) — Keller Postman LLC</h3>
+        <ul>
+          <li>Delivered 30+ dashboards for leadership and operations.</li>
+          <li>Built 40+ Snowflake pipelines; automated ETL workflows.</li>
+          <li>Designed 15+ gold‑layer metric fact tables.</li>
+          <li>Optimized SQL logic and Snowflake clustering for performance.</li>
+        </ul>
+      </div>
+      <div class="card card--soft">
+        <h3>Research Assistant — Illinois State University</h3>
+        <ul>
+          <li>Analyzed VFSS recordings for 300+ patients.</li>
+          <li>Extracted 20+ quantitative variables for statistical analysis.</li>
+          <li>Created reports and visualizations to support hypotheses.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-            <div class="card card--soft">
-              <h3>Highlights</h3>
-              <ul class="list">
-                <li><strong>Dashboards:</strong> Delivered 30+ executive and operations dashboards surfacing performance and workflow insights.</li>
-                <li><strong>Pipelines:</strong> Engineered 40+ Snowflake pipelines across bronze/silver/gold layers with scheduled tasks.</li>
-                <li><strong>Metrics:</strong> Designed 15+ gold‑layer fact tables; aligned KPIs across legal, finance, operations.</li>
-                <li><strong>Impact:</strong> Improved campaign conversion and operational efficiency through data‑driven design.</li>
-              </ul>
-            </div>
-          </div>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid grid--3">
+        <div class="card card--project">
+          <h3>Snowflake Pipeline Suite</h3>
+          <p>End‑to‑end ETL across bronze/silver/gold with scheduled tasks.</p>
+          <span class="tag">Snowflake</span> <span class="tag">dbt</span>
         </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="section section--alt">
-        <div class="container">
-          <h2>Professional experience</h2>
-
-          <div class="timeline">
-
-            <article class="card card--timeline">
-              <div class="timeline__meta">
-                <span class="badge">Mar 2023 — Present</span>
-                <span class="badge badge--muted">Chicago, IL</span>
-              </div>
-              <h3 class="card__title">Data Analyst (Analytics Engineering Focus)</h3>
-              <p class="card__subtitle">Keller Postman LLC</p>
-              <ul class="list">
-                <li>Delivered 30+ dashboards for leadership and operations, improving visibility into case workflows and performance.</li>
-                <li>Built 40+ Snowflake pipelines; automated ETL via stored procedures and scheduled tasks.</li>
-                <li>Designed 15+ gold‑layer metric fact tables; unified reporting across teams.</li>
-                <li>Optimized SQL logic and Snowflake clustering, reducing query time and speeding dashboard execution.</li>
-              </ul>
-              <div class="card__actions">
-                <a class="link" href="#" target="_blank" rel="noopener">Case study</a>
-              </div>
-            </article>
-
-            <article class="card card--timeline">
-              <div class="timeline__meta">
-                <span class="badge">Sep 2021 — Mar 2023</span>
-                <span class="badge badge--muted">Remote</span>
-              </div>
-              <h3 class="card__title">Freelance Data Analyst</h3>
-              <p class="card__subtitle">Self‑Employed</p>
-              <ul class="list">
-                <li>Partnered with 8+ SMBs across retail, healthcare, legal, and food services for tailored reporting solutions.</li>
-                <li>Built interactive Power BI dashboards with advanced DAX; enabled drill‑downs to transaction‑level insights.</li>
-                <li>Implemented scheduled refreshes (MySQL, APIs, Salesforce) for real‑time KPI tracking.</li>
-                <li>Modeled customer acquisition and revenue trends; reduced manual reporting by 40%.</li>
-              </ul>
-              <div class="card__actions">
-                <a class="link" href="#" target="_blank" rel="noopener">Portfolio samples</a>
-              </div>
-            </article>
-
-            <article class="card card--timeline">
-              <div class="timeline__meta">
-                <span class="badge">Aug 2021 — May 2022</span>
-                <span class="badge badge--muted">Normal, IL</span>
-              </div>
-              <h3 class="card__title">Research Assistant</h3>
-              <p class="card__subtitle">Swallowing Research Laboratory, Illinois State University</p>
-              <ul class="list">
-                <li>Analyzed VFSS recordings for 300+ patients; extracted 20+ quantitative variables to support hypotheses.</li>
-                <li>Maintained clinical data integrity; improved research efficiency with structured workflows.</li>
-                <li>Created reports and visualizations to guide experimental planning.</li>
-              </ul>
-              <div class="card__actions">
-                <a class="link" href="#" target="_blank" rel="noopener">Research summary</a>
-              </div>
-            </article>
-
-          </div>
+        <div class="card card--project">
+          <h3>Executive KPI Dashboard</h3>
+          <p>Unified metrics and drill‑downs for leadership decisions.</p>
+          <span class="tag">Power BI</span> <span class="tag">DAX</span>
         </div>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects" class="section">
-        <div class="container">
-          <h2>Projects</h2>
-
-          <div class="grid grid--3">
-            <article class="card card--project">
-              <img class="card__image" src="project1.jpg" alt="Project 1 thumbnail">
-              <div class="card__body">
-                <h3 class="card__title">Snowflake pipeline suite</h3>
-                <p class="card__subtitle">End‑to‑end ETL across bronze/silver/gold with scheduled tasks and monitoring.</p>
-                <div class="stack">
-                  <span class="tag">Snowflake</span>
-                  <span class="tag">dbt</span>
-                  <span class="tag">SQL</span>
-                </div>
-                <div class="card__actions">
-                  <a class="button button--ghost" href="#" target="_blank" rel="noopener">Repository</a>
-                  <a class="link" href="#" target="_blank" rel="noopener">Read case study</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="card card--project">
-              <img class="card__image" src="project2.jpg" alt="Project 2 thumbnail">
-              <div class="card__body">
-                <h3 class="card__title">Executive KPI dashboard</h3>
-                <p class="card__subtitle">Unified metrics, drill‑downs, and performance narratives for leadership decisions.</p>
-                <div class="stack">
-                  <span class="tag">Power BI</span>
-                  <span class="tag">DAX</span>
-                  <span class="tag">SQL</span>
-                </div>
-                <div class="card__actions">
-                  <a class="button button--ghost" href="#" target="_blank" rel="noopener">Live demo</a>
-                  <a class="link" href="#" target="_blank" rel="noopener">Design notes</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="card card--project">
-              <img class="card__image" src="project3.jpg" alt="Project 3 thumbnail">
-              <div class="card__body">
-                <h3 class="card__title">Workflow automation</h3>
-                <p class="card__subtitle">Automated reporting and alerts with Git‑based versioning and scheduled jobs.</p>
-                <div class="stack">
-                  <span class="tag">Python</span>
-                  <span class="tag">Airflow</span>
-                  <span class="tag">Git</span>
-                </div>
-                <div class="card__actions">
-                  <a class="button button--ghost" href="#" target="_blank" rel="noopener">Docs</a>
-                  <a class="link" href="#" target="_blank" rel="noopener">Architecture</a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section id="education" class="section section--alt">
-        <div class="container">
-          <h2>Education</h2>
-          <div class="grid grid--2">
-            <div class="card card--soft">
-              <h3>M.S. in Data Science</h3>
-              <p class="muted">Eastern University — Dec 2026 (Expected)</p>
-              <ul class="list">
-                <li>Focus: data engineering, modeling, and analytics strategy.</li>
-                <li>Projects: ETL pipelines, BI visual storytelling, reproducible workflows.</li>
-              </ul>
-            </div>
-            <div class="card card--soft">
-              <h3>B.S. in Communication Sciences and Disorders</h3>
-              <p class="muted">Illinois State University — Aug 2022</p>
-              <ul class="list">
-                <li>Research assistant: VFSS analysis and clinical data integrity.</li>
-                <li>Quant methods and structured reporting.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="card card--soft">
-            <h2>Contact</h2>
-            <p>Want to talk data systems, dashboards, or analytics engineering? Reach out.</p>
-            <div class="stack">
-              <a class="chip chip--link" href="mailto:youremail@example.com">youremail@example.com</a>
-              <a class="chip chip--link" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="chip chip--link" href="https://github.com/yourgithub" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p class="muted">© 2025 Michelle Gibbons</p>
-        <div class="stack">
-          <a class="link" href="#about">About</a>
-          <a class="link" href="#projects">Projects</a>
-          <a class="link" href="#education">Education</a>
-          <a class="link" href="#contact">Contact</a>
+        <div class="card card--project">
+          <h3>Workflow Automation</h3>
+          <p>Automated reporting and alerts with Git‑based versioning.</p>
+          <span class="tag">Python</span> <span class="tag">Airflow</span>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-  </div>
+  <!-- Education -->
+  <section id="education" class="section section--alt">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="grid grid--2">
+        <div class="card card--soft">
+          <h3>M.S. in Data Science</h3>
+          <p class="muted">Eastern University — Expected 2026</p>
+        </div>
+        <div class="card card--soft">
+          <h3>B.S. in Communication Sciences and Disorders</h3>
+          <p class="muted">Illinois State University — 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Minimal JS for mobile nav -->
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="card card--soft">
+        <h2>Contact</h2>
+        <p>Want to talk data systems, dashboards, or analytics engineering? Reach out.</p>
+        <a class="chip chip--link" href="mailto:youremail@example.com">youremail@example.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© 2025 Michelle Gibbons</p>
+    </div>
+  </footer>
+
+  <!-- Mobile nav toggle -->
   <script>
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
     toggle.addEventListener('click', () => {
       nav.classList.toggle('nav--open');
-      toggle.classList.toggle('menu-toggle--open');
     });
   </script>
-
 </body>
 </html>
