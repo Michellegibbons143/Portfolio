@@ -1,155 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelle Gibbons - Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- External Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelle Gibbons | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header__inner">
-      <a class="brand" href="#">
-        <span class="brand__title">Michelle Gibbons</span>
-        <span class="brand__subtitle">Data Analyst • Analytics Engineer</span>
-      </a>
-      <nav class="nav">
-        <a class="nav__link" href="#about">About</a>
-        <a class="nav__link" href="#experience">Experience</a>
-        <a class="nav__link" href="#projects">Projects</a>
-        <a class="nav__link" href="#education">Education</a>
-        <a class="nav__link" href="#contact">Contact</a>
-        <a class="button button--primary" href="resume.pdf" target="_blank">Resume</a>
-      </nav>
-      <!-- Dark mode toggle -->
-      <button class="theme-toggle" id="themeToggle">🌓</button>
-    </div>
+  <header>
+    <h1>Michelle Gibbons</h1>
+    <p>Data Analyst | Analytics Engineering Focus</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <h1 class="hero__title">Hi, I'm Michelle Gibbons</h1>
-      <p class="hero__subtitle">I build end‑to‑end analytics systems — from Snowflake pipelines and dbt models to executive dashboards and data storytelling.</p>
-      <div class="hero__actions">
-        <a class="button button--primary" href="#projects">Explore Projects</a>
-        <a class="button button--ghost" href="#about">About Me</a>
-      </div>
-      <div class="hero__meta">
-        <a class="chip" href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a class="chip" href="https://github.com/yourgithub" target="_blank">GitHub</a>
-        <a class="chip" href="mailto:youremail@example.com">Email</a>
-      </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I specialize in transforming raw data into scalable systems and actionable insights. With 4+ years of experience, I build end-to-end dashboards, design ETL pipelines, and align metrics across teams to drive strategic decisions.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Keller Postman LLC | Chicago, IL</h3>
+      <p><strong>Data Analyst (Analytics Engineering Focus)</strong> — March 2023 - Present</p>
+      <ul>
+        <li>Delivered 30+ Sigma dashboards surfacing insights on performance and strategy.</li>
+        <li>Engineered 40+ Snowflake pipelines across bronze, silver, and gold layers.</li>
+        <li>Built 15+ Power BI dashboards with advanced DAX and Power Query.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Freelance Data Analyst</h3>
+      <p><strong>September 2021 - March 2023</strong></p>
+      <ul>
+        <li>Partnered with 8 businesses to build tailored reporting solutions.</li>
+        <li>Built Power BI models with scheduled refreshes from MySQL, APIs, and Salesforce.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="card">
-        <img class="avatar" src="headshot.jpg" alt="Michelle headshot">
-        <h2>About Me</h2>
-        <p>I’m a data analyst working across the full analytics stack. I specialize in transforming raw data into scalable systems and actionable insights. With 4+ years of experience, I build end‑to‑end dashboards, design ETL pipelines, and align metrics across teams to drive strategic decisions.</p>
-        <p>My work spans Snowflake pipeline engineering, dbt modeling, and interactive BI. I thrive where storytelling meets architecture — optimizing SQL, defining KPIs with stakeholders, and delivering business impact.</p>
-      </div>
-    </div>
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>M.S. in Data Science</strong> — Eastern University (Expected Dec 2026)</p>
+    <p><strong>B.S. in Communication Sciences and Disorders</strong> — Illinois State University (2019–2022)</p>
   </section>
 
-  <!-- Experience -->
-  <section id="experience" class="section section--alt">
-    <div class="container">
-      <h2>Professional Experience</h2>
-      <div class="card">
-        <h3>Data Analyst (Analytics Engineering Focus) — Keller Postman LLC</h3>
-        <ul>
-          <li>Delivered 30+ dashboards for leadership and operations.</li>
-          <li>Built 40+ Snowflake pipelines; automated ETL workflows.</li>
-          <li>Designed 15+ gold‑layer metric fact tables.</li>
-          <li>Optimized SQL logic and Snowflake clustering for performance.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Research Assistant — Illinois State University</h3>
-        <ul>
-          <li>Analyzed VFSS recordings for 300+ patients.</li>
-          <li>Extracted 20+ quantitative variables for statistical analysis.</li>
-          <li>Created reports and visualizations to support hypotheses.</li>
-        </ul>
-      </div>
-    </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: michelle@example.com</p>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid grid--3">
-        <div class="card">
-          <h3>Snowflake Pipeline Suite</h3>
-          <p>End‑to‑end ETL across bronze/silver/gold with scheduled tasks.</p>
-          <span class="tag">Snowflake</span> <span class="tag">dbt</span>
-        </div>
-        <div class="card">
-          <h3>Executive KPI Dashboard</h3>
-          <p>Unified metrics and drill‑downs for leadership decisions.</p>
-          <span class="tag">Power BI</span> <span class="tag">DAX</span>
-        </div>
-        <div class="card">
-          <h3>Workflow Automation</h3>
-          <p>Automated reporting and alerts with Git‑based versioning.</p>
-          <span class="tag">Python</span> <span class="tag">Airflow</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="section section--alt">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="grid grid--2">
-        <div class="card">
-          <h3>M.S. in Data Science</h3>
-          <p class="muted">Eastern University — Expected 2026</p>
-        </div>
-        <div class="card">
-          <h3>B.S. in Communication Sciences and Disorders</h3>
-          <p class="muted">Illinois State University — 2022</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="card">
-        <h2>Contact</h2>
-        <p>Want to talk data systems, dashboards, or analytics engineering? Reach out.</p>
-        <a class="chip" href="mailto:youremail@example.com">youremail@example.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="muted">© 2025 Michelle Gibbons</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Michelle Gibbons</p>
   </footer>
-
-  <!-- Dark mode toggle script -->
-  <script>
-    const toggle = document.getElementById('themeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
 </body>
 </html>
