@@ -6,24 +6,36 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f9fc;
   color: #333;
   padding: 20px;
 }
 
 /* Header styles */
 header {
-  background-color: #4a90e2;
-  color: white;
-  padding: 20px;
+  background-color: #e8f0fe;
   text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #555;
+  margin-top: 10px;
 }
 
 nav ul {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 nav ul li {
@@ -32,9 +44,9 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
+  color: #1a73e8;
+  font-weight: 600;
 }
 
 /* Section styles */
@@ -43,19 +55,24 @@ section {
 }
 
 h2 {
+  color: #1a73e8;
   margin-bottom: 10px;
-  color: #4a90e2;
 }
 
-.project-card {
+.job {
   background-color: white;
   border: 1px solid #ddd;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Footer styles */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
 footer {
   text-align: center;
   margin-top: 40px;
