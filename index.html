@@ -6,7 +6,7 @@
   <title>Michelle Gibbons - Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- External Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -27,11 +27,8 @@
         <a class="nav__link" href="#contact">Contact</a>
         <a class="button button--primary" href="resume.pdf" target="_blank">Resume</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span class="menu-toggle__bar"></span>
-        <span class="menu-toggle__bar"></span>
-        <span class="menu-toggle__bar"></span>
-      </button>
+      <!-- Dark mode toggle -->
+      <button class="theme-toggle" id="themeToggle">🌓</button>
     </div>
   </header>
 
@@ -55,7 +52,7 @@
   <!-- About -->
   <section id="about" class="section">
     <div class="container">
-      <div class="card card--soft">
+      <div class="card">
         <img class="avatar" src="headshot.jpg" alt="Michelle headshot">
         <h2>About Me</h2>
         <p>I’m a data analyst working across the full analytics stack. I specialize in transforming raw data into scalable systems and actionable insights. With 4+ years of experience, I build end‑to‑end dashboards, design ETL pipelines, and align metrics across teams to drive strategic decisions.</p>
@@ -68,7 +65,7 @@
   <section id="experience" class="section section--alt">
     <div class="container">
       <h2>Professional Experience</h2>
-      <div class="card card--soft">
+      <div class="card">
         <h3>Data Analyst (Analytics Engineering Focus) — Keller Postman LLC</h3>
         <ul>
           <li>Delivered 30+ dashboards for leadership and operations.</li>
@@ -77,7 +74,7 @@
           <li>Optimized SQL logic and Snowflake clustering for performance.</li>
         </ul>
       </div>
-      <div class="card card--soft">
+      <div class="card">
         <h3>Research Assistant — Illinois State University</h3>
         <ul>
           <li>Analyzed VFSS recordings for 300+ patients.</li>
@@ -93,17 +90,17 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="grid grid--3">
-        <div class="card card--project">
+        <div class="card">
           <h3>Snowflake Pipeline Suite</h3>
           <p>End‑to‑end ETL across bronze/silver/gold with scheduled tasks.</p>
           <span class="tag">Snowflake</span> <span class="tag">dbt</span>
         </div>
-        <div class="card card--project">
+        <div class="card">
           <h3>Executive KPI Dashboard</h3>
           <p>Unified metrics and drill‑downs for leadership decisions.</p>
           <span class="tag">Power BI</span> <span class="tag">DAX</span>
         </div>
-        <div class="card card--project">
+        <div class="card">
           <h3>Workflow Automation</h3>
           <p>Automated reporting and alerts with Git‑based versioning.</p>
           <span class="tag">Python</span> <span class="tag">Airflow</span>
@@ -117,11 +114,11 @@
     <div class="container">
       <h2>Education</h2>
       <div class="grid grid--2">
-        <div class="card card--soft">
+        <div class="card">
           <h3>M.S. in Data Science</h3>
           <p class="muted">Eastern University — Expected 2026</p>
         </div>
-        <div class="card card--soft">
+        <div class="card">
           <h3>B.S. in Communication Sciences and Disorders</h3>
           <p class="muted">Illinois State University — 2022</p>
         </div>
@@ -132,10 +129,10 @@
   <!-- Contact -->
   <section id="contact" class="section">
     <div class="container">
-      <div class="card card--soft">
+      <div class="card">
         <h2>Contact</h2>
         <p>Want to talk data systems, dashboards, or analytics engineering? Reach out.</p>
-        <a class="chip chip--link" href="mailto:youremail@example.com">youremail@example.com</a>
+        <a class="chip" href="mailto:youremail@example.com">youremail@example.com</a>
       </div>
     </div>
   </section>
@@ -147,12 +144,11 @@
     </div>
   </footer>
 
-  <!-- Mobile nav toggle -->
+  <!-- Dark mode toggle script -->
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
+    const toggle = document.getElementById('themeToggle');
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('nav--open');
+      document.body.classList.toggle('dark-mode');
     });
   </script>
 </body>
